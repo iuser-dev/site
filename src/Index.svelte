@@ -15,18 +15,18 @@ main
 </template>
 
 <script lang="coffee">
-> @user.tax/ui/red.css:
-  @user.tax/ui/Box.css:
+> user.tax/red.css:
+  user.tax/Box.css:
 
   svelte > onMount
-  @user.tax/ui > uI18n uAuth
-  @user.tax/ui/I18n.js:I18n > I18N_CDN
-  @user.tax/ui/lang.js
-  @user.tax/ui/way.js > MAIL PHONE
+  user.tax > uI18n uAuth
+  user.tax/I18n.js:I18n > I18N_CDN
+  user.tax/lang.js
+  user.tax/way.js > MAIL PHONE
   typed.js:Typed
   ~/gen/i18n > TYPE SLOGAN
   ~/I18n.coffee:getI18n
-  @user.tax/ui/Box.js:Box > xClose escClose
+  user.tax/Box.js:Box > xClose escClose
 
 uI18n()
 uAuth()
