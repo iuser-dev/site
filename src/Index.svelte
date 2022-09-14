@@ -41,11 +41,11 @@ a_agree = "//juejin.cn"
 type = (elem) =>
   elem.typed?.destroy()
   backDelay = 999
-  slogan = i18n[SLOGAN]
+  slogan = I18N[SLOGAN]
   typed = elem.typed = new Typed(
     elem
     {
-      strings: ["", i18n[TYPE], i18n[SLOGAN] + "^" + 3 * backDelay]
+      strings: ["", I18N[TYPE], I18N[SLOGAN] + "^" + 3 * backDelay]
       typeSpeed: 150
       backSpeed: 45
       backDelay
@@ -59,7 +59,7 @@ type = (elem) =>
   return
 
 :$
-  if Array.isArray i18n
+  if Array.isArray I18N
     for i from doc.getElementsByTagName('i-slogan')
       type i
 
