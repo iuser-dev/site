@@ -23,7 +23,7 @@ LI = [
         )
     )
 
-    if /\bi18n\[/.test code
+    if /\bI18N\[/.test code
       code = replace(
         code
         '<script lang="coffee">'
